@@ -1,5 +1,3 @@
-import File
-
 class DistanceCalculator:
     def __init__(self, goalDist):
         self.goalDistance = goalDist
@@ -21,7 +19,7 @@ class DistanceCalculator:
 
 class AppHandler:
     def __init__(self):
-
+        print('hello')
 
 if __name__ == "__main__":
     print("running")
