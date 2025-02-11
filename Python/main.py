@@ -35,6 +35,25 @@ class AppHandler:
         print("Welcome to my walking distance tracker.")
         print("The aim of this app is to track the distance walked so I can keep track of how my Feburary challenge is going.")
 
+    def getInput(self):
+        validInput = False
+        selction = ""
+
+        print("Please enter \"a\" to add distance or \"s\" to remove distance")
+
+        while not validInput:
+            selection = input().lower()
+
+            if selection != "a":
+                validInput = True
+            elif selection != "s":
+                validInput = True
+            else: 
+                print("The input was invalid please only enter an \"a\" or a \"s\"")
+        
+        if selection == "a":
+            distanceWalked = input("Please enter the distance that you have walked this session")
+            self.calc.addDistance(distanceWalked)
 
 
 if __name__ == "__main__":
