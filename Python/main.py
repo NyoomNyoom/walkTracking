@@ -28,7 +28,14 @@ class AppHandler:
     def __init__(self):
         self.calc = DistanceCalculator()
 
+    def run(self):
+        print("")
     
+    def welcome(self):
+        print("Welcome to my walking distance tracker.")
+        print("The aim of this app is to track the distance walked so I can keep track of how my Feburary challenge is going.")
+
+
 
 if __name__ == "__main__":
     print("running")
