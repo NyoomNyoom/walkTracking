@@ -1,6 +1,6 @@
 class DistanceCalculator:
-    def __init__(self, goalDist):
-        self.goalDistance = goalDist
+    def __init__(self):
+        self.goalDistance = 100
         self.walkedDistance = 0
 
         try:
@@ -19,7 +19,9 @@ class DistanceCalculator:
 
 class AppHandler:
     def __init__(self):
-        print('hello')
+        self.calc = DistanceCalculator()
+
+    
 
 if __name__ == "__main__":
     print("running")
