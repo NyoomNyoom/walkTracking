@@ -17,6 +17,13 @@ class DistanceCalculator:
         if numIn > 0:
             self.walkedDistance += numIn
 
+    def subDistance(self, numIn):
+        if numIn > 0:
+            if self.walkedDistance - numIn < 0:
+                print("You cannot walk negative distance")
+            else:
+                self.walkedDistance -= numIn
+
 class AppHandler:
     def __init__(self):
         self.calc = DistanceCalculator()
